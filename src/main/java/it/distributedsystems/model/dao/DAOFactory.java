@@ -8,7 +8,7 @@ public abstract class DAOFactory {
 
     public static DAOFactory getDAOFactory(String whichFactory) {
         try {
-            return (DAOFactory) new EJB3DaoFactory(); //Class.forName(whichFactory).newInstance();
+            return new EJB3DaoFactory(); //Class.forName(whichFactory).newInstance();
         } catch (NullPointerException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();

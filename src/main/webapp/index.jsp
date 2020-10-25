@@ -79,10 +79,17 @@
 			product.setName( request.getParameter("name") );
 			product.setProductNumber(Integer.parseInt(request.getParameter("number")));
 
-			Producer producer = producerDAO.findProducerByName(request.getParameter("producer"));
+			Producer producer = null;
+			if(request.getParameter("producer")==null){
+				producer = producerDAO.findProducerByName(request.getParameter("producer"));
+			}
+			else{
+				producer = producerDAO.findProducerById(Integer.parseInt(request.getParameter("producer")));
+			}
 			product.setProducer(producer);
 			int id = productDAO.insertProduct(product);
 			out.println("<!-- inserted product '" + product.getName() + "' with id = '" + id + "' -->");
+
 		}
 
 		//Da aggiungere la possibilità di fare un ordine in sessione e di finalizzarla per creare un purchase.

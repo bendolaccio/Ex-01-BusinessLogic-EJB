@@ -8,13 +8,13 @@
 
 	<!-- DB information -->
 	<!-- il DB test è un database lasciato in concessione per un prima inizializzazione delle esercitazioni. Comunque non ne è garantita la stabilità, quindi si consiglia di fare il deployment locale sulle vostre macchine di un'altra istanza -->
-    <property name="connection.url">jdbc:mysql://137.204.57.168:3306/test</property>
-    <property name="connection.username">root</property>
+     <property name="connection.url">jdbc:mysql://127.0.0.1:3306/test</property>
+    <property name="connection.username">sdm</property>
     <property name="connection.password">sdm</property>
 
 <!--    <property name="connection.driver_class">com.mysql.jdbc.Driver</property> -->
      <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
-<!--    <property name="dialect">org.hibernate.dialect.MySQL8DialectDialect</property> -->
+<!--    <property name="dialect">org.hibernate.dialect.MySQL8Dialect</property> -->
      <property name="dialect">org.hibernate.dialect.MySQL57Dialect</property>
   
     <property name="show_sql">true</property>
