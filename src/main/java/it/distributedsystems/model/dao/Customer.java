@@ -46,4 +46,11 @@ public class Customer implements Serializable {
 
     public void setPurchases(Set<Purchase> purchases) { this.purchases = purchases; }
 
+    @Override
+    public String toString() {
+        return "Customer{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                '}';
+    }
 }

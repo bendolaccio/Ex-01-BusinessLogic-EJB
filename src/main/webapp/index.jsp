@@ -170,6 +170,14 @@
 	<div>
 		<a href="<%= request.getContextPath() %>">Ricarica lo stato iniziale di questa pagina</a>
 	</div>
+	<div>
+		<a href="./customer.jsp">Vai alla pagina shop</a>
+	</div>
+	<div>
+		<p>
+
+		</p>
+	</div>
 
 	</body>
 

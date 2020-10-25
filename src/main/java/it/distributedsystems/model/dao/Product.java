@@ -77,4 +77,15 @@ public class Product implements Serializable {
     public void setProducer(Producer producer) {
         this.producer = producer;
     }
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                "id=" + id +
+                ", productNumber=" + productNumber +
+                ", name='" + name + '\'' +
+                ", price=" + price +
+                ", producer=" + producer +
+                '}';
+    }
 }
